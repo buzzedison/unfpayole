@@ -6,6 +6,7 @@ export interface Question {
 }
 
 export const questions: Question[] = [
+  // Project Management & Resource Allocation (5 Questions)
   {
     id: 1,
     question: "What is the purpose of resource planning in Project Management?",
@@ -30,17 +31,6 @@ export const questions: Question[] = [
   },
   {
     id: 3,
-    question: "What is the purpose of the Critical Path Method in resource allocation?",
-    options: [
-      "To use only the available resources",
-      "To carry out multiple tasks at a time",
-      "To identify tasks that can be delayed to free up resources",
-      "To ensure tasks are prioritized by team stress"
-    ],
-    correctAnswer: 2
-  },
-  {
-    id: 4,
     question: "What should your project's resource plan consider?",
     options: [
       "Worktime only",
@@ -51,7 +41,7 @@ export const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    id: 5,
+    id: 4,
     question: "Which of these is a tip for effective resource allocation?",
     options: [
       "Make project needs optimistic",
@@ -62,40 +52,7 @@ export const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    id: 6,
-    question: "What does the term 'Agile' emphasize in project risk management?",
-    options: [
-      "Strict adherence to plans",
-      "Rigidity",
-      "Flexibility",
-      "Control"
-    ],
-    correctAnswer: 2
-  },
-  {
-    id: 7,
-    question: "In Agile, what role do User Stories play in risk identification?",
-    options: [
-      "To outline the budget for a project",
-      "To prioritize tasks for development",
-      "To define project scope and value while highlighting assumptions",
-      "To review the status of the project"
-    ],
-    correctAnswer: 2
-  },
-  {
-    id: 8,
-    question: "What is the main purpose of Backlog Grooming in Agile risk identification?",
-    options: [
-      "To set clear goals for a sprint",
-      "To prioritize tasks in the product backlog",
-      "To discuss ongoing risks",
-      "To determine the impact of risks"
-    ],
-    correctAnswer: 1
-  },
-  {
-    id: 9,
+    id: 5,
     question: "What is the primary goal of Sprint Planning meetings in Agile?",
     options: [
       "Review past actions",
@@ -105,19 +62,54 @@ export const questions: Question[] = [
     ],
     correctAnswer: 2
   },
+  // Risk Management (4 Questions)
   {
-    id: 10,
-    question: "In Agile, what happens during Daily Stand-Ups?",
+    id: 6,
+    question: "What is the first step in risk mitigation?",
     options: [
-      "Teams discuss strategy",
-      "Teams discuss their pay",
-      "Team members share updates on their progress",
-      "Teams talk about personal topics"
+      "Blaming someone",
+      "Ignoring the risks",
+      "Implementing actions",
+      "Creating a response plan"
+    ],
+    correctAnswer: 3
+  },
+  {
+    id: 7,
+    question: "What does Risk Assessment involve?",
+    options: [
+      "Planning the risk",
+      "Determining where to put blame for risks",
+      "Assessing the likelihood and impact of risks",
+      "Completely ignoring risk"
     ],
     correctAnswer: 2
   },
   {
-    id: 11,
+    id: 8,
+    question: "What is a method to promote transparency and accountability during Risk Monitoring?",
+    options: [
+      "Daily stand ups",
+      "Sprint reviews",
+      "Sprint retrospectives",
+      "All of the above"
+    ],
+    correctAnswer: 3
+  },
+  {
+    id: 9,
+    question: "What does the term 'Agile' emphasize in project risk management?",
+    options: [
+      "Strict adherence to plans",
+      "Rigidity",
+      "Flexibility",
+      "Control"
+    ],
+    correctAnswer: 2
+  },
+  // PESTLE Framework (4 Questions)
+  {
+    id: 10,
     question: "What is a 'Political Factor' according to the PESTLE Framework?",
     options: [
       "Demographic trends",
@@ -128,7 +120,7 @@ export const questions: Question[] = [
     correctAnswer: 3
   },
   {
-    id: 12,
+    id: 11,
     question: "Which factors relate to demographic trends, cultural attitudes, and lifestyle changes, according to the PESTLE Framework?",
     options: [
       "Economic factors",
@@ -137,6 +129,17 @@ export const questions: Question[] = [
       "Legal Factors"
     ],
     correctAnswer: 1
+  },
+  {
+    id: 12,
+    question: "According to the PESTLE Framework, what is the focus of 'Environmental Factors'?",
+    options: [
+      "Economic growth rates",
+      "Political stability",
+      "Ecological considerations",
+      "Cultural attitudes"
+    ],
+    correctAnswer: 2
   },
   {
     id: 13,
@@ -149,85 +152,9 @@ export const questions: Question[] = [
     ],
     correctAnswer: 3
   },
+  // Google Tools (4 Questions)
   {
     id: 14,
-    question: "In the PESTLE Framework, what do 'Legal Factors' involve?",
-    options: [
-      "The laws and regulations governing business operations",
-      "Consumer trends",
-      "New technology releases",
-      "Political stability"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 15,
-    question: "According to the PESTLE Framework, what is the focus of 'Environmental Factors'?",
-    options: [
-      "Economic growth rates",
-      "Political stability",
-      "Ecological considerations",
-      "Cultural attitudes"
-    ],
-    correctAnswer: 2
-  },
-  {
-    id: 16,
-    question: "What does Risk Assessment involve?",
-    options: [
-      "Planning the risk",
-      "Determining where to put blame for risks",
-      "Assessing the likelihood and impact of risks",
-      "Completely ignoring risk"
-    ],
-    correctAnswer: 2
-  },
-  {
-    id: 17,
-    question: "What is the first step in risk mitigation?",
-    options: [
-      "Blaming someone",
-      "Ignoring the risks",
-      "Implementing actions",
-      "Creating a response plan"
-    ],
-    correctAnswer: 3
-  },
-  {
-    id: 18,
-    question: "What is a method to promote transparency and accountability during Risk Monitoring?",
-    options: [
-      "Daily stand ups",
-      "Sprint reviews",
-      "Sprint retrospectives",
-      "All of the above"
-    ],
-    correctAnswer: 3
-  },
-  {
-    id: 19,
-    question: "What is the suggested way to use Google Drive & Docs for project planning?",
-    options: [
-      "Use google translate",
-      "Use for time real collaboration",
-      "Use it as a storage device",
-      "Send documents via email"
-    ],
-    correctAnswer: 1
-  },
-  {
-    id: 20,
-    question: "What should you use the '@' symbol for in Google Docs?",
-    options: [
-      "To add your email",
-      "To add placeholder chips",
-      "To add comments",
-      "To link to another document"
-    ],
-    correctAnswer: 1
-  },
-  {
-    id: 21,
     question: "What does the presentation recommend you use to create a list of tasks?",
     options: [
       "@date",
@@ -238,7 +165,7 @@ export const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    id: 22,
+    id: 15,
     question: "Which Google tool should you use to create a budget tracker?",
     options: [
       "Google Docs",
@@ -249,18 +176,7 @@ export const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    id: 23,
-    question: "In Google Sheets, what keyboard shortcut can you use to easily select more rows?",
-    options: [
-      "CTRL + SHIFT + UP ARROW",
-      "CTRL + ALT + DOWN ARROW",
-      "CTRL + SHIFT + DOWN ARROW",
-      "CTRL + TAB"
-    ],
-    correctAnswer: 2
-  },
-  {
-    id: 24,
+    id: 16,
     question: "In Google Sheets what does the function ARRAYFORMULA do?",
     options: [
       "apply a formula to a cell",
@@ -271,7 +187,7 @@ export const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    id: 25,
+    id: 17,
     question: "What is the purpose of Data Validation in Google Sheets?",
     options: [
       "To protect data from cyber attacks",
@@ -281,195 +197,9 @@ export const questions: Question[] = [
     ],
     correctAnswer: 1
   },
+  // Cybersecurity in Humanitarian Work (5 Questions)
   {
-    id: 26,
-    question: "What function should you use to find the sum of all cells that match a criteria in google sheets?",
-    options: [
-      "Arrayformula",
-      "SUMIF",
-      "Vlookup",
-      "Conditional formatting"
-    ],
-    correctAnswer: 1
-  },
-  {
-    id: 27,
-    question: "What is the function VLOOKUP used for?",
-    options: [
-      "look for specific cell information",
-      "find data in a particular range of cells",
-      "calculate the sum of the column",
-      "change the look of a specific cell"
-    ],
-    correctAnswer: 1
-  },
-  {
-    id: 28,
-    question: "How do you visualize data in Google Sheets?",
-    options: [
-      "By copying the data into another document",
-      "By creating charts",
-      "By highlighting them in different colours",
-      "By using Google Translate"
-    ],
-    correctAnswer: 1
-  },
-  {
-    id: 29,
-    question: "What does the 'Marketing' section of the presentation recommend using for a sign up process?",
-    options: [
-      "Use Google Docs",
-      "Use Google Sheets",
-      "Use Google Forms",
-      "Use email"
-    ],
-    correctAnswer: 2
-  },
-  {
-    id: 30,
-    question: "How do you create a new form in Google Drive according to the presentation?",
-    options: [
-      "Use 'forms.new' in the web browser",
-      "Use the 'file new' function",
-      "Download a form and re-upload it",
-      "Use the +New button and then select 'Forms'"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 31,
-    question: "What should you add to a Google Form to get more responses?",
-    options: [
-      "add a video in the description",
-      "make it longer",
-      "add more pages",
-      "take away the description section"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 32,
-    question: "What should you do to add relevant questions to a sign up form?",
-    options: [
-      "use open ended questions",
-      "ask leading questions",
-      "ask very long questions",
-      "add lots of sections"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 33,
-    question: "In Google Forms what does Response validation do?",
-    options: [
-      "Creates a summary of answers",
-      "Sends email notifications",
-      "Restricts the type of responses",
-      "Collects email addresses"
-    ],
-    correctAnswer: 2
-  },
-  {
-    id: 34,
-    question: "According to the presentation, why is it a good idea to create sections in a google form?",
-    options: [
-      "To make it easier to fill out",
-      "To make it harder to fill out",
-      "To group your questions",
-      "None of the above"
-    ],
-    correctAnswer: 2
-  },
-  {
-    id: 35,
-    question: "What are Conditional Questions?",
-    options: [
-      "Questions that have no answers",
-      "Questions that you skip over",
-      "Questions you ask based on the responses you get",
-      "Questions you add later"
-    ],
-    correctAnswer: 2
-  },
-  {
-    id: 36,
-    question: "What does the presentation say to do after people fill out a Google Form?",
-    options: [
-      "Link the form to Google Sheets",
-      "Send them an email",
-      "Download the responses",
-      "Nothing they will all be stored safely"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 37,
-    question: "What do you need to do to get email notifications when someone fills out your Google Form?",
-    options: [
-      "select the option to 'get email notifications for new responses'",
-      "add your email to every question",
-      "contact google",
-      "contact the people who filled it out"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 38,
-    question: "What is one option to extend the functionality of Google Forms?",
-    options: [
-      "Generate a qr code",
-      "Using add-ons",
-      "Adding questions",
-      "Changing the colours"
-    ],
-    correctAnswer: 1
-  },
-  {
-    id: 39,
-    question: "According to the presentation what does white space do for slides?",
-    options: [
-      "it makes it look empty",
-      "it is unnecessary",
-      "leaves room for better understanding",
-      "makes it hard to read"
-    ],
-    correctAnswer: 2
-  },
-  {
-    id: 40,
-    question: "What did the presentation say you should use to make a presentation more interesting?",
-    options: [
-      "White space",
-      "Images",
-      "Bullet points",
-      "Audio"
-    ],
-    correctAnswer: 1
-  },
-  {
-    id: 41,
-    question: "What is one way you can start a new presentation?",
-    options: [
-      "by using old slides",
-      "by using a template",
-      "by downloading images",
-      "by using only text"
-    ],
-    correctAnswer: 1
-  },
-  {
-    id: 42,
-    question: "In Google Slides how do you add a transition?",
-    options: [
-      "Select transition in the menu",
-      "Download it and re-upload it",
-      "Copy it from another slide",
-      "Do nothing"
-    ],
-    correctAnswer: 0
-  },
-  {
-    id: 43,
+    id: 18,
     question: "What is a key challenge facing digital humanitarian work?",
     options: [
       "Lack of funding",
@@ -480,7 +210,7 @@ export const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    id: 44,
+    id: 19,
     question: "What does the term 'dark side of digital humanitarian work' refer to?",
     options: [
       "The lack of transparency in aid distribution",
@@ -491,40 +221,7 @@ export const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    id: 45,
-    question: "What was the major impact of the 2022 ICRC breach?",
-    options: [
-      "Loss of funding",
-      "Compromised personal information of 515,000 vulnerable individuals",
-      "Disrupted aid distribution in specific regions",
-      "Closure of ICRC offices"
-    ],
-    correctAnswer: 1
-  },
-  {
-    id: 46,
-    question: "What did cybercriminals target in the UNDP attack this year?",
-    options: [
-      "Beneficiary databases",
-      "Financial records",
-      "HR and procurement data",
-      "Communication systems"
-    ],
-    correctAnswer: 2
-  },
-  {
-    id: 47,
-    question: "Which type of cyberattack involves deceptive emails that appear to be from trusted sources?",
-    options: [
-      "Ransomware",
-      "Phishing",
-      "Supply chain attack",
-      "DDoS attack"
-    ],
-    correctAnswer: 1
-  },
-  {
-    id: 48,
+    id: 20,
     question: "What is the main effect of ransomware attacks?",
     options: [
       "Theft of personal information",
@@ -535,25 +232,339 @@ export const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    id: 49,
-    question: "What is the 'ripple effect' described in supply chain attacks?",
+    id: 21,
+    question: "What is the biggest security vulnerability for many humanitarian organizations, according to the text?",
     options: [
-      "The spreading of rumors through social media",
-      "The cascading effects of a breach across multiple organizations",
-      "The delay in delivery of aid supplies",
-      "The financial impact on donor organizations"
+      "Their technology",
+      "Their mindset",
+      "Lack of training",
+      "Limited funding"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 22,
+    question: "What is a key step to help improve cybersecurity?",
+    options: [
+      "Ignoring old systems and focusing on new ones",
+      "Avoiding any outside collaboration",
+      "Implementing training, planning, and partnerships",
+      "Focusing solely on internal IT departments"
+    ],
+    correctAnswer: 2
+  },
+  // Leadership, Decision-Making & Networking (7 Questions)
+  {
+    id: 23,
+    question: "What is the core definition of leadership in the context of this lesson?",
+    options: [
+      "Making important decisions for a group",
+      "Inspiring and guiding others towards a common goal",
+      "Managing a group to complete a project",
+      "Holding position of authority in an organization"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 24,
+    question: "What is the key idea behind a structured approach to decision-making?",
+    options: [
+      "Making quick decisions based on gut feeling",
+      "Avoiding any pre-planned steps",
+      "Using clear, repeatable steps to evaluate options",
+      "Relying only on experience and intuition"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 25,
+    question: "What is effective networking about?",
+    options: [
+      "Only meeting with extroverts",
+      "Building genuine relationships",
+      "Exchanging favors",
+      "Limiting yourself to work events"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 26,
+    question: "What is an 'elevator pitch'?",
+    options: [
+      "A formal presentation for a job",
+      "A brief summary of who you are and your interests",
+      "A way to sell products",
+      "A public speaking practice"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 27,
+    question: "What is the most important quality in creating your personal brand?",
+    options: [
+      "Being fake and trying to please everyone",
+      "Being vague and open to interpretation",
+      "Authenticity",
+      "Copying other people's brands"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 28,
+    question: "What is the main benefit of a well-established personal brand?",
+    options: [
+      "To make more money",
+      "To become a social media influencer",
+      "To establish a reputation as an expert in your field",
+      "To have lots of followers"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 29,
+    question: "Which of the following is an important step when positioning yourself for speaking engagements?",
+    options: [
+      "Do not share your unique perspectives",
+      "Avoid connecting online",
+      "Be Ready and well read",
+      "Share your personal story"
+    ],
+    correctAnswer: 2
+  },
+  // High-Performing Teams (4 Questions)
+  {
+    id: 30,
+    question: "According to the document, what is required for high performance in a team?",
+    options: [
+      "Just having a strong leader",
+      "Only good individual skills",
+      "Wanting it, knowing what it takes, and taking action daily",
+      "A high budget and resources"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 31,
+    question: "What does psychological safety allow team members to do?",
+    options: [
+      "Stay silent",
+      "Take risks, admit mistakes, and have difficult conversations",
+      "Hide mistakes",
+      "Avoid challenges"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 32,
+    question: "According to the text, what is a main reason teams might not develop trust?",
+    options: [
+      "They are not using data",
+      "They subtly punish mistakes",
+      "They only focus on the positive",
+      "They don't do team building activities"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 33,
+    question: "According to the presentation what should leaders do to impact their teams performance positively?",
+    options: [
+      "create an environment for people to work at their best",
+      "ask what the team can do for them",
+      "only do what the boss wants",
+      "control all the aspects of a teams workflow"
+    ],
+    correctAnswer: 0
+  },
+  // Diplomatic Protocol (4 Questions)
+  {
+    id: 34,
+    question: "What is the core definition of diplomacy?",
+    options: [
+      "The art of making laws",
+      "The practice of conducting international trade",
+      "The art and practice of conducting negotiations",
+      "The science of international politics"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 35,
+    question: "Which theory of international relations emphasizes power and national interests?",
+    options: [
+      "Liberalism",
+      "Realism",
+      "Constructivism",
+      "Idealism"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 36,
+    question: "In diplomatic protocol, what is the foundation of all interactions?",
+    options: [
+      "Reciprocity",
+      "Precedence",
+      "Respect",
+      "Etiquette"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 37,
+    question: "What does 'Precedence' refer to in diplomatic protocol?",
+    options: [
+      "Cultural norms in diplomatic contexts",
+      "Hierarchical order in diplomatic settings",
+      "Communication across cultural barriers",
+      "Mutual exchange of courtesies"
+    ],
+    correctAnswer: 1
+  },
+  // Change Management (7 Questions)
+  {
+    id: 38,
+    question: "What is the first step in creating urgency for change?",
+    options: [
+      "Target audience identification",
+      "Core message development",
+      "Communication frequency planning",
+      "Immediate action implementation"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 39,
+    question: "Which component is critical to building a guiding coalition?",
+    options: [
+      "Selecting communication channels",
+      "Finding key influencers",
+      "Aligning stakeholder vision",
+      "Setting measurable goals"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 40,
+    question: "What should a vision statement for change include?",
+    options: [
+      "Key performance indicators",
+      "A clear and inspiring goal",
+      "Resource allocation details",
+      "Communication plans"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 41,
+    question: "What is a strategic pillar in change management?",
+    options: [
+      "Clear deadlines for initiatives",
+      "Identifying focus areas like training and resources",
+      "Crafting a measurable vision",
+      "Tracking feedback from stakeholders"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 42,
+    question: "Which step involves gathering and addressing stakeholder feedback?",
+    options: [
+      "Audience segmentation",
+      "Feedback collection",
+      "Message crafting",
+      "Communication frequency"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 43,
+    question: "What is the purpose of short-term wins in change management?",
+    options: [
+      "To allocate large resources for a single milestone",
+      "To create achievable, specific short-term goals that show progress",
+      "To replace long-term sustainability strategies",
+      "To focus on stakeholder communication exclusively"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 44,
+    question: "Why is flexibility important in change implementation?",
+    options: [
+      "To maintain urgency throughout the initiative",
+      "To adjust strategies when challenges arise",
+      "To ensure that roles are clearly defined",
+      "To allocate sufficient resources for quick wins"
+    ],
+    correctAnswer: 1
+  },
+  // Personal Branding (2 questions)
+  {
+    id: 45,
+    question: "What is a definition of personal branding according to this material?",
+    options: [
+      "Just making a logo for a business",
+      "Building a reputation that represents the best version of yourself",
+      "Copying the personal brand of someone else",
+      "The act of becoming a celebrity"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 46,
+    question: "Which of the four C's emphasizes the importance of consistently representing values across platforms?",
+    options: [
+      "Clarity",
+      "Consistency",
+      "Content",
+      "Communication"
+    ],
+    correctAnswer: 1
+  },
+  // Leadership Reimagined (4 Questions)
+  {
+    id: 47,
+    question: "According to the document, what is the reality of leadership?",
+    options: [
+      "Leadership is about charisma and personal abilities",
+      "Leadership focuses on solving challenges, not tools or attributes",
+      "Leadership depends on positions of authority",
+      "Leadership requires followers to succeed"
+    ],
+    correctAnswer: 1
+  },
+  {
+    id: 48,
+    question: "Which key step contributes to 80% of leadership success in problem-solving?",
+    options: [
+      "Implementing the solution",
+      "Choosing the right action",
+      "Understanding the problem",
+      "Building a team"
+    ],
+    correctAnswer: 2
+  },
+  {
+    id: 49,
+    question: "What is the first step in the leadership learning cycle?",
+    options: [
+      "Reflect on outcomes",
+      "Do—take action and lead initiatives",
+      "Correct mistakes based on insights",
+      "Repeat successful approaches"
     ],
     correctAnswer: 1
   },
   {
     id: 50,
-    question: "What is a major consequence of cyberattacks on humanitarian organizations, beyond the loss of data and disruption of systems?",
+    question: "Which capability allows leaders to inspire and organize people toward solutions?",
     options: [
-      "Increased public awareness",
-      "Erosion of trust between the organizations and the people they serve",
-      "More funding",
-      "Improved operational efficiency"
+      "Reflective practice",
+      "Diagnostic skills",
+      "Mobilisation ability",
+      "Analytical thinking"
     ],
-    correctAnswer: 1
+    correctAnswer: 2
   }
 ];

@@ -91,7 +91,7 @@ export default function Home() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-600 mb-6">
-            Interactive Quiz UNFPA YoLe Cohort 6
+            Interactive Quiz Yole Cohort 6
           </h1>
           <div className="relative pt-1">
             <div className="flex mb-2 items-center justify-between">
